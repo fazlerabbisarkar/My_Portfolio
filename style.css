@@ -1,0 +1,271 @@
+/* ==================================================================================
+                                For All Component
+===================================================================================== */
+
+
+
+body{
+    color: #000;
+}
+.container{
+    margin-bottom: 100px;
+    padding-top: 1px;
+}
+@font-face {
+    font-family: "Mota";
+    src: url('Font/Gilroy-ExtraBold.otf');
+}
+@font-face {
+    font-family: "Chikon";
+    src: url('Font/Gilroy-Light.otf');
+}
+p{
+    font-family: 'Chikon', sans-serif;
+}
+h1, h2{
+    font-family: 'Mota', sans-serif;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+/* ==================================================================================
+                                Navbar Section
+===================================================================================== */
+
+
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Mota', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+
+
+/* ==================================================================================
+                                Hero Section
+===================================================================================== */
+
+
+
+h1 span{
+    background-color: blanchedalmond;;
+}
+h1, p{
+    margin: 0;
+}
+p span{
+    font-family: 'Mota', sans-serif;
+}
+.centering-to-centering p{
+    font-style: 19px;
+}
+.centering-to-center::before {
+    border-top: 4px solid #000;
+    border-top-width: 2px;  
+    border-left: 4px solid #000;
+    border-left-width: 2px;
+}
+.centering-to-center::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+::before{
+    box-sizing: border-box;
+}
+.fazle-rabbi{
+    position: relative;
+    padding: 5px;
+}
+.col-md-4{
+    height: 400px;
+    position: relative;
+    box-sizing: border-box;
+}
+.circle{
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 65px;
+    bottom: 0;
+}
+.professional{
+    z-index: 3;
+    position: inherit; 
+}
+.professional img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 10px rgba(128, 128, 128, 0.363));
+}
+
+
+
+/* ==================================================================================
+                                Portfolio Section
+===================================================================================== */
+.gallery h2{
+    margin-bottom: 0;
+}
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+.gallery .buttons{
+    padding: 15px 30px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Mota', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+}
+.gallery .buttons.active{
+    background-color: blanchedalmond;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.image-container a img{
+    width: 330px;
+    height: 330px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3); 
+    overflow: hidden; 
+}
+.image-container a.facebook-cover img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3); 
+    overflow: hidden; 
+}
+.image-container a.youtube-thumbnail img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3); 
+    overflow: hidden; 
+}
+.image-container a:hover img{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+/* ==================================================================================
+                                Contact Section
+===================================================================================== */
+
+
+
+#Contact h2{
+    margin-top: 0;
+}
+.connect-item{
+    text-align: center;
+    background-color: blanchedalmond;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.connect-item p{
+    font-size: 19px;
+    font-family: 'Mota';
+}
+.connect-item p span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+
+
+/* ==================================================================================
+                                Footer Section
+===================================================================================== */
+
+
+
+footer .container{
+    margin-bottom: 20px;
+}
+small{
+    text-align: center;
+    display: block;
+}
+.social-icon{
+    text-align: right;
+}
+.social-icon .fab{
+    font-size: 20px;
+    padding: 5px 8px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #000;
+}
+
+
+
+/*==================================================================================
+                                Responsive Section
+===================================================================================== */
+
+
+
+@media screen and (max-width:460px) {
+    
+    .connect-item{
+        margin-bottom: 0;
+    }
+    small{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    } 
+    .container{
+        margin-bottom: 50px;
+    }  
+}
+
+
+
+
+
+
